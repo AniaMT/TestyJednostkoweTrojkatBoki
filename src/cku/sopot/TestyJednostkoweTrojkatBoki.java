@@ -16,10 +16,17 @@ public class TestyJednostkoweTrojkatBoki {
         System.out.print ("Podaj długość boku B trójkąta: ");
         bokB = scanner.nextFloat();
         System.out.print ("Podaj długość boku C trójkąta: ");
-        bokB = scanner.nextFloat();
+        bokC = scanner.nextFloat();
 
         TrojkatBoki trojkatBoki = new TrojkatBoki(bokA, bokB, bokC);
         obwod = trojkatBoki.obliczObwod();
         pole = trojkatBoki.obliczPole();
+
+        System.out.print("Trójkąt o bokach: ");
+        System.out.print(trojkatBoki.getBokA() + ", ");
+        System.out.print(trojkatBoki.getBokB() + ", ");
+        System.out.print(trojkatBoki.getBokC() + ", ");
+        System.out.println("ma obwód: " + obwod + "i pole: " + pole);
     }
+
 }
